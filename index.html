@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Sticks</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="sticks.css">
+</head>
+
+
+<body>
+    <div id="stick-game">
+        <h1 v-bind:style="BGcolor">
+            {{ turn }}'s turn
+            <br>
+            Turns Left: {{ counter }}
+        </h1>
+
+        <button v-bind:style="stickBGcolor[0]" v-on:click="buttonClick0" class="stick" id="stick0"></button>
+        <button v-bind:style="stickBGcolor[1]" v-on:click="buttonClick1" class="stick" id="stick1"></button>
+        <button v-bind:style="stickBGcolor[2]" v-on:click="buttonClick2" class="stick" id="stick2"></button>
+        <button v-bind:style="stickBGcolor[3]" v-on:click="buttonClick3" class="stick" id="stick3"></button>
+        <button v-bind:style="stickBGcolor[4]" v-on:click="buttonClick4" class="stick" id="stick4"></button>
+        <button v-bind:style="stickBGcolor[5]" v-on:click="buttonClick5" class="stick" id="stick5"></button>
+        <button v-bind:style="stickBGcolor[6]" v-on:click="buttonClick6" class="stick" id="stick6"></button>
+        <button v-bind:style="stickBGcolor[7]" v-on:click="buttonClick7" class="stick" id="stick7"></button>
+        <button v-bind:style="stickBGcolor[8]" v-on:click="buttonClick8" class="stick" id="stick8"></button>
+        <button v-bind:style="stickBGcolor[9]" v-on:click="buttonClick9" class="stick" id="stick9"></button>
+        <button v-bind:style="stickBGcolor[10]" v-on:click="buttonClick10" class="stick" id="stick10"></button>
+        <button v-bind:style="stickBGcolor[11]" v-on:click="buttonClick11" class="stick" id="stick11"></button>
+        
+
+        <br>
+        <br>
+        <br>
+
+        <button v-on:click="reset" class="control-button" id="reset">Reset</button>
+        <button v-on:click="endTurn" class="control-button" id="end-turn">End Turn</button>
+    </div>
+      
+      
+
+      
+    <script src="sticks.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+.demo {
+    font-family: sans-serif;
+    border: 1px solid #eee;
+    border-radius: 2px;
+    padding: 20px 30px;
+    margin-top: 1em;
+    margin-bottom: 40px;
+    user-select: none;
+    overflow-x: auto;
+}
+
+
+#stick-game {
+  width: calc(60px * 12 + 10px);
+  padding: auto;
+}
+
+.stick {
+  width: 20px;
+  height: 200px;
+  margin: 20px;
+  float: left;
+  border-radius: 12%;
+}
+
+#stick-game {
+  height: auto;
+}
+
+#stick-game h2{
+  color: gray;
+
+}
